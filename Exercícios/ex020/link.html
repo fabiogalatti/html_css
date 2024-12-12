@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element 
+            > = children
+        */
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        a:hover{
+            color: darkmagenta;
+            text-decoration: underline;
+        }
+        a:hover::after{
+            content: '[link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links para acessar!</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório do GitRub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Canal do curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
